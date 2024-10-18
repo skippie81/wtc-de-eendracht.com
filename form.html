@@ -1,0 +1,48 @@
+<div class="container px-5 my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 rounded-3 shadow-lg">
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <div class="h4 fw-light text-muted">Contact Formulier</div>
+                    </div>
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                        <div class="form-floating mb-3">
+                            <label for="name">Naam:</label>
+                            <input class="form-control" id="naam" type="text" placeholder="Naam" data-sb-validations="required" />
+                        </div>
+
+                        <br>
+
+                        <div class="form-floating mb-3">
+                            <label for="emailAddress">Email Adres:</label>
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Adres" data-sb-validations="required,email" />
+                        </div>
+
+                        <br>
+
+                        <div class="form-floating mb-3">
+                            <label for="emailAddress">Onderwerp:</label>
+                            <input class="form-control" id="subject" type="text" placeholder="Onderwerp" data-sb-validations="required" />
+                        </div>
+
+                        <br>
+
+                        <div class="form-floating mb-3">
+                            <label for="message">Stel hier je vraag:</label>
+                            <textarea class="form-control" id="message" type="text" placeholder="Jouw vraag" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        </div>
+
+                        <br>
+
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Verstuur</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
