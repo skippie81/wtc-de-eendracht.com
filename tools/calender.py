@@ -7,13 +7,14 @@ import re
 
 cal = []
 
-date_format = '%A, %d %B %Y'
+date_format = '%A %B %d %Y'
 hour_fmt = '%H:%M'
 datum_kalender_fromat = '%d-%m-%Y'
 
 with open(sys.argv[1], 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=';')
     for row in reader:
+        print(row)
         rit_nr = row[0]
         ploeg = row[1].upper().replace('+','P')
         datum = row[2]
@@ -51,7 +52,7 @@ for ploeg in ['A', 'B', 'BP']:
                 nr = rit['nr']
 
                 naam = re.sub(f'^ *rit *[0-9{ploeg.lower()} ]*- *','',naam)
-                gpx = f'<a href="gpx/{gpx}">{naam.title()}</a>'
+                gpx = f'<a href="gpx/{gpx}">{naam.replace('-',' ').title()}</a>'
 
                 entry = f"<tr><td>{nr}</td> <td>{datum}</td> <td>{uur}</td> <td>{rit['afstand']}km</td> <td>{gpx}</td></tr>"
 
