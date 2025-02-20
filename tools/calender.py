@@ -4,12 +4,13 @@ import csv
 import sys
 import datetime
 import re
+import locale
 
 cal = []
 
 date_format = '%A %B %d %Y'
 hour_fmt = '%H:%M'
-datum_kalender_fromat = '%d-%m-%Y'
+datum_kalender_fromat = '%a %d-%m-%Y'
 
 with open(sys.argv[1], 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=';')
@@ -39,6 +40,7 @@ with open(sys.argv[1], 'r') as csvfile:
         )
 
 for ploeg in ['A', 'B', 'BP']:
+    locale.setlocale(locale.LC_ALL, 'nl_BE')
     with open(f'{ploeg.lower()}_kalender.html', 'w') as kalender:
         header = '<table class="table"><thead><tr><th>#</th><th>Datum</th><th>Uur</th><th>Afstand</th><th>GPX</th></tr></thead>'
         kalender.write(f'{header}\n')
