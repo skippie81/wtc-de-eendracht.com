@@ -8,12 +8,12 @@ import locale
 
 cal = []
 
-date_format = '%A %B %d %Y'
+date_format = '%m/%d/%y'
 hour_fmt = '%H:%M'
-datum_kalender_fromat = '%a %d-%m-%Y'
+datum_kalender_format = '%a %d-%m-%Y'
 
 with open(sys.argv[1], 'r') as csvfile:
-    reader = csv.reader(csvfile, delimiter=';')
+    reader = csv.reader(csvfile, delimiter=',')
     for row in reader:
         print(row)
         rit_nr = row[0]
@@ -49,7 +49,7 @@ for ploeg in ['A', 'B', 'BP']:
             if rit['ploeg'] == ploeg:
                 gpx = rit['gpx']
                 uur = rit['vertrek'].strftime(hour_fmt)
-                datum = rit['datum'].strftime(datum_kalender_fromat)
+                datum = rit['datum'].strftime(datum_kalender_format)
                 naam = rit['naam'].lower()
                 nr = rit['nr']
 
