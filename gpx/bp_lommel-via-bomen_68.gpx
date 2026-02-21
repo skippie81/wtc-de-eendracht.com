@@ -5,12 +5,12 @@
     <link href="http://www.garmin.com">
       <text>Garmin International</text>
     </link>
-    <time>2022-03-24T10:24:22Z</time>
+    <time>2026-02-15T09:18:32Z</time>
     <bounds maxlat="51.202070564031601" maxlon="5.328824445605278" minlat="51.069157887250185" minlon="5.052162548527122"/>
   </metadata>
 
   <trk>
-    <name>LOMMEL-via Bomen 68</name>
+    <name>B+ LOMMELvia Bomen 68</name>
     <extensions>
       <gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
         <gpxx:DisplayColor>Cyan</gpxx:DisplayColor>

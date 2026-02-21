@@ -5,12 +5,12 @@
     <link href="http://www.garmin.com">
       <text>Garmin International</text>
     </link>
-    <time>2022-04-01T12:10:21Z</time>
+    <time>2026-02-15T08:41:51Z</time>
     <bounds maxlat="51.079630320891738" maxlon="5.194706618785858" minlat="50.847698533907533" minlon="5.079160155728459"/>
   </metadata>
 
   <trk>
-    <name>B+ Runkelen 75</name>
+    <name>B Runkelen</name>
     <extensions>
       <gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
         <gpxx:DisplayColor>Cyan</gpxx:DisplayColor>
