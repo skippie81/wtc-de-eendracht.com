@@ -1,0 +1,24 @@
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="container marketing text-center">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="a-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">A Ploeg</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="b-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">B Ploeg</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bp-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">B+ Ploeg</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="a-tab"><div w3-include-html="a_kalender.html"></div></div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="b-tab"><div w3-include-html="b_kalender.html"></div></div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="bp-tab"><div w3-include-html="bp_kalender.html"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
