@@ -3,12 +3,15 @@
 <html lang="be">
     <head>
         <!-- Include Bootstrap components -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"
-              integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
-        <script src="bootstrap/js/bootstrap.bundle.js"
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+
+        <script src="bootstrap/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+
+        <script src="js/custom.js"></script>
 
         <meta charset="utf-8">
 
@@ -37,14 +40,22 @@
         </style>
 
     </head>
+
     <body class="mainBody">
-    <div w3-include-html="navigation.html"></div>
-    <div w3-include-html="header.html"></div>
+            <div w3-include-html="navigation.html">
+                <!--#include file="navigation.html" -->
+            </div>
+            <div w3-include-html="header.html">
+                <!--#include file="header.html" -->
+            </div>
 
-    <div w3-include-html="home.html"></div>
+            <div w3-include-html="home.html">
+                <!--#include file="home.html" -->
+            </div>
 
-    <div w3-include-html="footer.html"></div>
+            <div w3-include-html="footer.html">
+                <!--#include file="footer.html" -->
+            </div>
     </body>
-    <script src="bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="js/script.js"></script>
+
 </html>
