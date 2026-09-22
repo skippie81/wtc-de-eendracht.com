@@ -5,7 +5,10 @@ $(function () {
 $(function () {
     $('[data-toggle="popover"]').popover({
         container: 'body',
-        html: true
+        html: true,
+        content : function() {
+            return $(this).attr('data-content');
+        },
     })
 })
 
