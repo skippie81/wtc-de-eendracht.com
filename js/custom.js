@@ -11,6 +11,15 @@ $(function () {
     })
 })
 
+$(function () {
+    $('[data-toggle="popover-image"]').popover({
+        container: 'body',
+        content: 'data-content',
+        title: 'title',
+        html: true
+    })
+})
+
 function includeHTML() {
     var elements = document.getElementsByTagName("*");
     for (var i = 0; i < elements.length; i++) {
