@@ -5,17 +5,6 @@ $(function () {
 $(function () {
     $('[data-toggle="popover"]').popover({
         container: 'body',
-        content: 'data-content',
-        title: 'title',
-        html: true
-    })
-})
-
-$(function () {
-    $('[data-toggle="popover-image"]').popover({
-        container: 'body',
-        content: 'data-content',
-        title: 'title',
         html: true
     })
 })
