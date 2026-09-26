@@ -9,12 +9,7 @@ $(function () {
         content : function() {
             return $(this).attr('data-content');
         },
-        trigger : function() {
-            return $(this).attr('data-trigger');
-        },
-        placement : function() {
-            return $(this).attr('data-placement');
-        },
+        placement : 'left',
     })
 })
 
