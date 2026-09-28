@@ -1,10 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>
+                    Wil je graag meer weten, of heb je een specifieke vraag. Neem even contact met ons op en wij proberen
+                    zo snel mogelijk je een antwoord te geven.
+                    </br></br>
+                    Of kom gezoon op zondag mee rijden en stel je vraag achteraf bij een drankje in ons clublocaal.
+                </p>
+                <div class="my-5">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <div class="form-floating">
+                            <input class="form-control" id="name" type="text" placeholder="Jouw naam ..." data-sb-validations="required" />
+                            <label for="name">Naam</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Naam verplicht.</div>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="email" type="email" placeholder="Je email adres ..." data-sb-validations="required,email" />
+                            <label for="email">Email</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Email adres verplicht in te vullen.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Geen geldig email adres.</div>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="message" placeholder="Schrijf hier jouw vraag..." style="height: 12rem" data-sb-validations="required"></textarea>
+                            <label for="message">Bericht</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Verplicht in te vullen.</div>
+                        </div>
+                        <br />
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Jouw vraag is successvol verstuurd!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Er ging iets mis!</div></div>
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Verstuur</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
