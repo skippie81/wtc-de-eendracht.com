@@ -10,6 +10,7 @@ $(function () {
             return $(this).attr('data-content');
         },
         placement : 'left',
+        trigger: 'hover',
     })
 })
 
